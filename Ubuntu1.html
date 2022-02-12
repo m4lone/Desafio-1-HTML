@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- Formatando o tipo de documento para HTML -->
+
+<html lang="pt-br"><!-- Definindo linguagem padrão para PT-BR -->
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercicio_01</title>
+    <link rel="stylesheet" href="interface.css"/>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Exercicio 01</h1>
+      <div class="row">
+        <div class="question">
+          <form method="POST" id="answer">
+            <div class="question">
+              <p>Qual melhor jogador de basquete do mundo ?</p>
+            </div>
+            <br /><br />
+            <p>
+              <input type="radio" id="a" name="resposta" value="a" />
+              <label>A) Kobe Bryant </label>
+            </p>
+
+            <p>
+              <input type="radio" id="b" name="resposta" value="b" />
+              <label for="">B) Lebron James</label>
+            </p>
+
+            <p>
+              <input
+                type="radio"
+                id="c"
+                name="resposta"
+                value="c"
+                data-resposta="true"
+                class="resposta-certa"
+              />
+              <label for="">C) Michael Jordan </label>
+            </p>
+
+            <p>
+              <input type="radio" id="d" name="resposta" value="d" />
+              <label for="">D) Lerry Bird </label>
+            </p>
+
+            <input type="submit" name="enviar" value="enviar" />
+          </form>
+        </div>
+      </div>
+      <script src="jquery.js"></script>
+      <script src="exercicio1.js"></script>
+    </main>
+  </body>
+</html>
